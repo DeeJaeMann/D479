@@ -59,7 +59,7 @@ main {
         position: sticky;
         top: 0;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .top-row {
