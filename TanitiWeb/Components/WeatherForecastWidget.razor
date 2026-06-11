@@ -1,0 +1,29 @@
+@using TanitiWeb.Services
+@inject WeatherService Weather
+
+<div class="card mb-4">
+    <div class="card-body">
+        <h2 class="card-title">This Week on Taniti</h2>
+
+        <div class="forecast-grid">
+            @foreach (var day in Forecast)
+            {
+                <div class="forecast-day">
+                    <div class="forecast-icon">@day.Icon</div>
+                    <strong>@day.Day</strong>
+                    <div>@day.High°F / @day.Low°F</div>
+                    <div>@day.Conditions</div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<ForecastDay>? Forecast;
+
+    protected override void OnInitialized()
+    {
+        Forecast = Weather.GetWeeklyForecast();
+    }
+}

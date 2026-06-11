@@ -113,3 +113,19 @@ code {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
+
+.custom-header {
+    /*background-color: #DFF3EA; !* sea green *!*/
+    background-color: #0A9396;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.card {
+    /*border: 2px solid #1B7F85;*/
+    /*border:2px solid #057984;*/
+    border:2px solid #005f73;
+    border-radius: 8px;
+    overflow: hidden;
+}

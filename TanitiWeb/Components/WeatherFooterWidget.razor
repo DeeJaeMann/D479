@@ -1,0 +1,27 @@
+@using TanitiWeb.Services
+@inject WeatherService Weather
+
+<div class="footer-weather">
+    @if (Forecast != null)
+    {
+        <span class="footer-weather-today">
+            @Forecast[0].Icon Today: @Forecast[0].High°F / @Forecast[0].Low°F @Forecast[0].Conditions
+        </span>
+
+        <span class="footer-weather-mini">
+            @foreach (var day in Forecast.Skip(1))
+            {
+                <span>@day.Icon @day.Day: @day.High° • </span>
+            }
+        </span>
+    }
+</div>
+
+@code {
+    private List<ForecastDay>? Forecast;
+
+    protected override void OnInitialized()
+    {
+        Forecast = Weather.GetFooterForecast();
+    }
+}
