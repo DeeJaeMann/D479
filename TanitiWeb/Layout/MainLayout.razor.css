@@ -50,6 +50,10 @@ main {
     .page {
         flex-direction: column;
     }
+    
+    .content {
+        padding-bottom: 5rem;
+    }
 
     .header-bar {
         /*width: 250px;*/

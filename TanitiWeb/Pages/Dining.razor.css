@@ -1,13 +1,13 @@
-.island-image {
-    float: right;
+.dining-image {
+    float: left;
     width: 300px;
     height: auto;
-    margin: 0 0 1rem 1rem;
+    margin: 1rem 1rem 0 0;
     border-radius: 8px;
 }
 
 @media (max-width:641px) {
-    .island-image {
+    .dining-image {
         float: none;
         display: block;
         width: 100%;

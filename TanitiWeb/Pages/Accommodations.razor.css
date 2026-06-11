@@ -1,0 +1,14 @@
+.lodging-image {
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    width: 100%;
+    max-width:350px;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 641px) {
+    .lodging-image {
+        max-width: 300px;
+    }
+}
