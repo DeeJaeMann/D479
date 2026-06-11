@@ -20,8 +20,8 @@ jobs:
     - name: Publish
       run: dotnet publish -c Release -o build_output
 
-    - name: Copy .nojekyll
-      run: cp wwwroot/.nojekyll build_output/
+    - name: Add .nojekyll
+      run: touch build_output/wwwroot/.nojekyll
 
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
