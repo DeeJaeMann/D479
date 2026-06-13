@@ -23,6 +23,9 @@ jobs:
     - name: Add .nojekyll
       run: touch build_output/wwwroot/.nojekyll
 
+    - name: Create 404.html for SPA routing
+      run: cp build_output/wwwroot/index.html build_output/wwwroot/404.html
+
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
