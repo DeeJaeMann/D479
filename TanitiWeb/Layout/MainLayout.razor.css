@@ -97,3 +97,13 @@ main {
         padding-right: 1.5rem !important;
     }
 }
+
+.footer-attribution {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 0.85rem;
+    /*background-color: #004a59; !* slightly darker teal for separation *!*/
+    background: #0A9396;
+    color: white;
+}
